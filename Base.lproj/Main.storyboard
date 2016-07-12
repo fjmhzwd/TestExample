@@ -37,7 +37,7 @@
                                                     <segue destination="Qr7-nk-Vxh" kind="presentation" id="Xqw-UT-lIy"/>
                                                 </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="aahttps://www.jpush.cn/ 13675023993 fjmhzwd@163.com 福建 福州" translatesAutoresizingMaskIntoConstraints="NO" id="tUW-Sv-9gs" customClass="JSQMessagesCellTextView">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="aahttps://www.jpush.cn/ 13675023993 fjmhzwd@163.com 福建 福州 GIT TEST" translatesAutoresizingMaskIntoConstraints="NO" id="tUW-Sv-9gs" customClass="JSQMessagesCellTextView">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="textColor" red="0.078431372550000003" green="0.78823529410000004" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
