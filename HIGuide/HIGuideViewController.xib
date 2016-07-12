@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HIGuideViewController">
+            <connections>
+                <outlet property="contentView" destination="pVm-ck-5B8" id="dUJ-l8-jnr"/>
+                <outlet property="contentWidth" destination="vpu-Ea-yIb" id="8Wh-Qj-Kxr"/>
+                <outlet property="pageControl" destination="7no-9f-RIg" id="FNy-bO-cZ2"/>
+                <outlet property="scrollView" destination="K47-c0-obq" id="FWm-iq-qZj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K47-c0-obq">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVm-ck-5B8" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="pVm-ck-5B8" firstAttribute="leading" secondItem="K47-c0-obq" secondAttribute="leading" id="3Cv-XN-q3w"/>
+                        <constraint firstItem="pVm-ck-5B8" firstAttribute="height" secondItem="K47-c0-obq" secondAttribute="height" id="IGc-u9-fzn"/>
+                        <constraint firstAttribute="bottom" secondItem="pVm-ck-5B8" secondAttribute="bottom" id="hSa-co-4px"/>
+                        <constraint firstItem="pVm-ck-5B8" firstAttribute="top" secondItem="K47-c0-obq" secondAttribute="top" id="qf1-AP-fbB"/>
+                        <constraint firstAttribute="trailing" secondItem="pVm-ck-5B8" secondAttribute="trailing" id="tzp-gk-FAo"/>
+                        <constraint firstItem="pVm-ck-5B8" firstAttribute="width" secondItem="K47-c0-obq" secondAttribute="width" id="vpu-Ea-yIb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="pVm-ck-5B8"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="3Cv-XN-q3w"/>
+                            <exclude reference="IGc-u9-fzn"/>
+                            <exclude reference="hSa-co-4px"/>
+                            <exclude reference="qf1-AP-fbB"/>
+                            <exclude reference="tzp-gk-FAo"/>
+                            <exclude reference="vpu-Ea-yIb"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="pVm-ck-5B8"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="3Cv-XN-q3w"/>
+                            <include reference="IGc-u9-fzn"/>
+                            <include reference="hSa-co-4px"/>
+                            <include reference="qf1-AP-fbB"/>
+                            <include reference="tzp-gk-FAo"/>
+                            <include reference="vpu-Ea-yIb"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7no-9f-RIg">
+                    <rect key="frame" x="-19" y="-18" width="39" height="37"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="180" y="683" width="39" height="37"/>
+                    </variation>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="K47-c0-obq" secondAttribute="bottom" id="0LH-ml-JRL"/>
+                <constraint firstAttribute="trailing" secondItem="K47-c0-obq" secondAttribute="trailing" id="Apb-9I-53G"/>
+                <constraint firstItem="K47-c0-obq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lt5-BT-hcZ"/>
+                <constraint firstItem="K47-c0-obq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VOG-Mi-AnV"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="K47-c0-obq"/>
+                    <exclude reference="7no-9f-RIg"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0LH-ml-JRL"/>
+                    <exclude reference="Apb-9I-53G"/>
+                    <exclude reference="Lt5-BT-hcZ"/>
+                    <exclude reference="VOG-Mi-AnV"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="K47-c0-obq"/>
+                    <include reference="7no-9f-RIg"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0LH-ml-JRL"/>
+                    <include reference="Apb-9I-53G"/>
+                    <include reference="Lt5-BT-hcZ"/>
+                    <include reference="VOG-Mi-AnV"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
